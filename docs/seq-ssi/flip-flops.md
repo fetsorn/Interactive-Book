@@ -23,11 +23,11 @@ has_children: false
 
 ## Introduction
 
-You covered about latches in the previous modules. Those are the basic building blocks of flip-flops. You can implement flip-flops in two methods.
+You covered latches in the previous modules. Those are the basic building blocks of flip-flops. You can implement flip-flops in two methods.
 
-In first method, cascade two latches in such a way that the first latch is enabled for every positive clock pulse and second latch is enabled for every negative clock pulse. So that the combination of these two latches become a flip-flop.
+In the first method, cascade two latches in such a way that the first latch is enabled for every positive clock pulse and second latch is enabled for every negative clock pulse. So that the combination of these two latches becomes a flip-flop.
 
-In second module, you can directly implement the flip-flop, which is edge sensitive. In this module, let us discuss the following flip-flops using second method.
+In the second module, you can directly implement the flip-flop, which is edge sensitive. In this module, let us discuss the following flip-flops using the second method.
 
 ## Differences between latches and flip-flops
 
@@ -44,7 +44,7 @@ In second module, you can directly implement the flip-flop, which is edge sensit
 
 
 ## Sub-modules
-Now let us implement various flip-flops by providing the cross coupling between NOR gates. You can also implement these flip-flops by using NAND gates, as well.
+Now let us implement various flip-flops by providing the cross coupling between NOR gates. You can also implement these flip-flops by using NAND gates as well.
 
 1. [SR flip-flop](#sr_flipflop)
 2. [D flip-flop](#d_flipflop)
@@ -62,7 +62,7 @@ SR flip-flop operates with only positive clock transitions or negative clock tra
 
 {% include image.html url="/assets/images/sr_flipflop.jpg" description="" %}
 
-his circuit has two inputs S & R and two outputs Q(t) & Q(t)’. The operation of SR flipflop is similar to SR Latch. But, this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.
+its circuit has two inputs S & R and two outputs Q(t) & Q(t)’. The operation of SR flipflop is similar to SR Latch. But this flip-flop affects the outputs only when positive transition of the clock signal is applied instead of active enable.
 
 ## State table 
 
@@ -122,7 +122,7 @@ This circuit has single input D and two outputs Q(t) & Q(t)’. The operation of
 |  1     |    1    |
 
 
-Therefore, D flip-flop always Hold the information, which is available on data input, D of earlier positive transition of clock signal. From the above state table, the next state equation can be directly written as
+Therefore, D flip-flop always Holds the information, which is available on data input, D of earlier positive transition of clock signal. From the above state table, the next state equation can be directly written as
 ```yaml
         Q(t + 1) = D
 ```
